@@ -17,11 +17,13 @@ addEventListener('fetch', (event) => {
     )
   } catch (e) {
     if (DEBUG) {
+      console.log(e.message);
       return event.respondWith(
         new Response(e.message || e.toString(), {
           status: 500,
         }),
       )
+
     }
     event.respondWith(new Response('Internal Error', { status: 500 }))
   }
