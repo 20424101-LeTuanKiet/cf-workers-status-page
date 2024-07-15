@@ -17,16 +17,16 @@ settings:
 monitors:
   - id: ptgym-online # unique identifier
     name: ptgym.online
-    description: 'You write code. They handle the rest.' # default=empty
+    description: '' # default=empty
     url: 'https://ptgym.online/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    #followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
 
   - id: www-ptgym-online
     name: www.ptgym.online
-    description: 'Built for anything connected to the Internet.'
+    description: ''
     url: 'https://www.ptgym.online'
     method: GET
     expectStatus: 200
